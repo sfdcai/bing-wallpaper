@@ -256,7 +256,7 @@ fi
 
 # install pihole if it has not been installed
 if ! type "pihole" > /dev/null; then
-	curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v | bash
+	curl -sSL https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | bash
 fi
 
 addClient
